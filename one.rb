@@ -1,3 +1,9 @@
+puts 'Hi, this is my first Ruby program!'
+sleep(1)
+puts 'Why don\'t we play a quick game of Hangman?'
+sleep(1)
+puts 'The word will be chosen randomly from a list and you get 15 chances to guess.'
+
 words = [
     'beautiful', 
     'basic', 
@@ -8,17 +14,12 @@ words = [
     'hibernation'
 ]
 
-puts 'Hi, this is my first Ruby program!'
-sleep(1)
-puts 'Why don\'t we play a quick game of Hangman?'
-sleep(1)
-puts 'The word will be chosen randomly from a list and you get 15 chances to guess.'
-
 chances = 15
 
 word = words[rand(words.length())] 
 result = '_' * word.length()
 result.split('')
+
 puts result
 
 chars = word.split('')
